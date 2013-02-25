@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3C2CD7A16DB83580029FEFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C2CD7916DB83580029FEFC /* UIKit.framework */; };
+		F3C2CD7C16DB83580029FEFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C2CD7B16DB83580029FEFC /* Foundation.framework */; };
+		F3C2CD7E16DB83580029FEFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3C2CD7D16DB83580029FEFC /* CoreGraphics.framework */; };
+		F3C2CD8416DB83580029FEFC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3C2CD8216DB83580029FEFC /* InfoPlist.strings */; };
+		F3C2CD8616DB83580029FEFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C2CD8516DB83580029FEFC /* main.m */; };
+		F3C2CD8A16DB83580029FEFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C2CD8916DB83580029FEFC /* AppDelegate.m */; };
+		F3C2CD8C16DB83580029FEFC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C2CD8B16DB83580029FEFC /* Default.png */; };
+		F3C2CD8E16DB83580029FEFC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C2CD8D16DB83580029FEFC /* Default@2x.png */; };
+		F3C2CD9016DB83580029FEFC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F3C2CD8F16DB83580029FEFC /* Default-568h@2x.png */; };
+		F3C2CD9316DB83580029FEFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3C2CD9216DB83580029FEFC /* ViewController.m */; };
+		F3C2CD9616DB83590029FEFC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3C2CD9416DB83590029FEFC /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F3C2CD7616DB83580029FEFC /* areyouaberliner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = areyouaberliner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C2CD7916DB83580029FEFC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F3C2CD7B16DB83580029FEFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F3C2CD7D16DB83580029FEFC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F3C2CD8116DB83580029FEFC /* areyouaberliner-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "areyouaberliner-Info.plist"; sourceTree = "<group>"; };
+		F3C2CD8316DB83580029FEFC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3C2CD8516DB83580029FEFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3C2CD8716DB83580029FEFC /* areyouaberliner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "areyouaberliner-Prefix.pch"; sourceTree = "<group>"; };
+		F3C2CD8816DB83580029FEFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F3C2CD8916DB83580029FEFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F3C2CD8B16DB83580029FEFC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F3C2CD8D16DB83580029FEFC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F3C2CD8F16DB83580029FEFC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F3C2CD9116DB83580029FEFC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F3C2CD9216DB83580029FEFC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F3C2CD9516DB83590029FEFC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3C2CD7316DB83580029FEFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C2CD7A16DB83580029FEFC /* UIKit.framework in Frameworks */,
+				F3C2CD7C16DB83580029FEFC /* Foundation.framework in Frameworks */,
+				F3C2CD7E16DB83580029FEFC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3C2CD6D16DB83580029FEFC = {
+			isa = PBXGroup;
+			children = (
+				F3C2CD7F16DB83580029FEFC /* areyouaberliner */,
+				F3C2CD7816DB83580029FEFC /* Frameworks */,
+				F3C2CD7716DB83580029FEFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3C2CD7716DB83580029FEFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3C2CD7616DB83580029FEFC /* areyouaberliner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3C2CD7816DB83580029FEFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3C2CD7916DB83580029FEFC /* UIKit.framework */,
+				F3C2CD7B16DB83580029FEFC /* Foundation.framework */,
+				F3C2CD7D16DB83580029FEFC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3C2CD7F16DB83580029FEFC /* areyouaberliner */ = {
+			isa = PBXGroup;
+			children = (
+				F3C2CD8816DB83580029FEFC /* AppDelegate.h */,
+				F3C2CD8916DB83580029FEFC /* AppDelegate.m */,
+				F3C2CD9116DB83580029FEFC /* ViewController.h */,
+				F3C2CD9216DB83580029FEFC /* ViewController.m */,
+				F3C2CD9416DB83590029FEFC /* ViewController.xib */,
+				F3C2CD8016DB83580029FEFC /* Supporting Files */,
+			);
+			path = areyouaberliner;
+			sourceTree = "<group>";
+		};
+		F3C2CD8016DB83580029FEFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3C2CD8116DB83580029FEFC /* areyouaberliner-Info.plist */,
+				F3C2CD8216DB83580029FEFC /* InfoPlist.strings */,
+				F3C2CD8516DB83580029FEFC /* main.m */,
+				F3C2CD8716DB83580029FEFC /* areyouaberliner-Prefix.pch */,
+				F3C2CD8B16DB83580029FEFC /* Default.png */,
+				F3C2CD8D16DB83580029FEFC /* Default@2x.png */,
+				F3C2CD8F16DB83580029FEFC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3C2CD7516DB83580029FEFC /* areyouaberliner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3C2CD9916DB83590029FEFC /* Build configuration list for PBXNativeTarget "areyouaberliner" */;
+			buildPhases = (
+				F3C2CD7216DB83580029FEFC /* Sources */,
+				F3C2CD7316DB83580029FEFC /* Frameworks */,
+				F3C2CD7416DB83580029FEFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = areyouaberliner;
+			productName = areyouaberliner;
+			productReference = F3C2CD7616DB83580029FEFC /* areyouaberliner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3C2CD6E16DB83580029FEFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = herznote;
+			};
+			buildConfigurationList = F3C2CD7116DB83580029FEFC /* Build configuration list for PBXProject "areyouaberliner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F3C2CD6D16DB83580029FEFC;
+			productRefGroup = F3C2CD7716DB83580029FEFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3C2CD7516DB83580029FEFC /* areyouaberliner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3C2CD7416DB83580029FEFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C2CD8416DB83580029FEFC /* InfoPlist.strings in Resources */,
+				F3C2CD8C16DB83580029FEFC /* Default.png in Resources */,
+				F3C2CD8E16DB83580029FEFC /* Default@2x.png in Resources */,
+				F3C2CD9016DB83580029FEFC /* Default-568h@2x.png in Resources */,
+				F3C2CD9616DB83590029FEFC /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3C2CD7216DB83580029FEFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C2CD8616DB83580029FEFC /* main.m in Sources */,
+				F3C2CD8A16DB83580029FEFC /* AppDelegate.m in Sources */,
+				F3C2CD9316DB83580029FEFC /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F3C2CD8216DB83580029FEFC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3C2CD8316DB83580029FEFC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F3C2CD9416DB83590029FEFC /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3C2CD9516DB83590029FEFC /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3C2CD9716DB83590029FEFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3C2CD9816DB83590029FEFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3C2CD9A16DB83590029FEFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "areyouaberliner/areyouaberliner-Prefix.pch";
+				INFOPLIST_FILE = "areyouaberliner/areyouaberliner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F3C2CD9B16DB83590029FEFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "areyouaberliner/areyouaberliner-Prefix.pch";
+				INFOPLIST_FILE = "areyouaberliner/areyouaberliner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3C2CD7116DB83580029FEFC /* Build configuration list for PBXProject "areyouaberliner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3C2CD9716DB83590029FEFC /* Debug */,
+				F3C2CD9816DB83590029FEFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3C2CD9916DB83590029FEFC /* Build configuration list for PBXNativeTarget "areyouaberliner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3C2CD9A16DB83590029FEFC /* Debug */,
+				F3C2CD9B16DB83590029FEFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3C2CD6E16DB83580029FEFC /* Project object */;
+}
