@@ -47,24 +47,30 @@
 //}
 
 -(void) shuffleThisQuestion {
-    for (uint i = 0; i < answers.count; ++i) {
-        int nElements = answers.count - i;
-        int n = arc4random_uniform(nElements) + i;
-        if (i == correct) {
-            [answers exchangeObjectAtIndex:i withObjectAtIndex:n];
-            correct = n;
-        }
-        else {
-            [answers exchangeObjectAtIndex:i withObjectAtIndex:n];
-        }
-    }
+
+    int final=0;
+    int nElements = answers.count;
+    int n = arc4random_uniform(nElements);
+    [answers exchangeObjectAtIndex:0 withObjectAtIndex:n];
+    final = n;  // final postion of answer is set
     
+//    for (uint i = 0; i < answers.count; ++i) {
+//        int nElements = answers.count - i;
+//        int n = arc4random_uniform(nElements) + i;
+////        int n = (arc4random() % nElements) + i;
+//        if (i == correct) {  // this happens once
+//            [answers exchangeObjectAtIndex:i withObjectAtIndex:n];
+//            final = n;  // final postion of answer is set
+//        }
+//        else {
+//            [answers exchangeObjectAtIndex:i withObjectAtIndex:n];
+//        }
+//    }
+    correct = final;
     self.answer_1 = answers[0];
     self.answer_2 = answers[1];
     self.answer_3 = answers[2];
     self.answer_4 = answers[3];
-    
-    
 }
 
 

@@ -42,7 +42,7 @@ float speed = 0.5f;
 float distance = 5.15;
 CGRect r;
 int level = 0;
-int answers[] = {1,2,3,4};
+//int answers[] = {1,2,3,4};
 bool pause_ = NO;
 bool shown = NO;
 int score = 0;
@@ -63,7 +63,7 @@ bool joker_fold_pressed = false;
         
         // Custom initialization
         box = [[ProgressAnimation alloc] init];
-        r = CGRectMake(0, 75, 10, 15);
+        r = CGRectMake(0, 75, 3, 12);
         box.frame = r;
         [box setBackgroundColor:[UIColor grayColor]];
         
@@ -225,6 +225,8 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
     
     tst * t = [[tst alloc] init];
     [t create];
+//    [t shuffle];
+//    [t shuffleQuestions];
     allQuestions = [[NSMutableArray alloc] init];
     allQuestions = [t.questions copy];
 }
@@ -255,75 +257,47 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
     
     // color to highlight
     
-    [option_one setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateHighlighted];
-    [option_one setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateSelected];
-    
-    [option_two setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-    [option_two setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
-    
-    [option_three setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-    [option_three setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
-    
-    [option_four setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-    [option_four setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
+    [option_one setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"]     forState:UIControlStateHighlighted | UIControlStateSelected ];
+    [option_two setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"]   forState:UIControlStateHighlighted | UIControlStateSelected ];
+    [option_three setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted | UIControlStateSelected ];
+    [option_four setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"]  forState:UIControlStateHighlighted | UIControlStateSelected ];
     
     switch (q.correct) {
+            
+            [option_one setBackgroundImage:[UIImage imageNamed:nil] forState:UIControlStateNormal ];
+            [option_two setBackgroundImage:[UIImage imageNamed:nil] forState:UIControlStateNormal ];
+            [option_three setBackgroundImage:[UIImage imageNamed:nil] forState:UIControlStateNormal ];
+            [option_four setBackgroundImage:[UIImage imageNamed:nil] forState:UIControlStateNormal ];
+            
         case 0:
-            [option_one setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateHighlighted];
-            [option_one setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateSelected];
             
-            [option_two setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-            [option_two setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
+
             
-            [option_three setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-            [option_three setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
-            
-            [option_four setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-            [option_four setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
-            
-            
+            [option_one   setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"]   forState:UIControlStateSelected | UIControlStateHighlighted  ];
+            [option_two   setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState: UIControlStateHighlighted| UIControlStateSelected ];
+            [option_three setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted | UIControlStateSelected ];
+            [option_four  setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted | UIControlStateSelected ];
             break;
             
         case 1:
-            [option_one setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-            [option_one setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
-            
-            [option_two setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateHighlighted];
-            [option_two setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateSelected];
-            
-            [option_three setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-            [option_three setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
-            
-            [option_four setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-            [option_four setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
+            [option_one    setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted | UIControlStateSelected ];
+            [option_two    setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"]   forState:UIControlStateHighlighted | UIControlStateSelected ];
+            [option_three  setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted | UIControlStateSelected ];
+            [option_four   setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted | UIControlStateSelected ];
             break;
             
         case 2:
-            [option_one setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-            [option_one setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
-            
-            [option_two setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-            [option_two setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
-            
-            [option_three setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateHighlighted];
-            [option_three setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateSelected];
-            
-            [option_four setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-            [option_four setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
+            [option_one   setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"]  forState:UIControlStateHighlighted | UIControlStateSelected ];
+            [option_two   setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"]  forState:UIControlStateHighlighted | UIControlStateSelected ];
+            [option_three setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"]    forState:UIControlStateHighlighted | UIControlStateSelected ];
+            [option_four  setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"]  forState:UIControlStateHighlighted | UIControlStateSelected ];
             break;
             
-        case 3:
-            [option_one setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-            [option_one setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
-            
-            [option_two setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-            [option_two setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
-            
-            [option_three setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-            [option_three setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
-            
-            [option_four setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateHighlighted];
-            [option_four setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateSelected];
+        case 4:
+            [option_one   setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"]   forState:UIControlStateHighlighted | UIControlStateSelected ];
+            [option_two   setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"]   forState:UIControlStateHighlighted | UIControlStateSelected ];
+            [option_three setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"]   forState:UIControlStateHighlighted | UIControlStateSelected ];
+            [option_four  setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"]     forState:UIControlStateHighlighted | UIControlStateSelected ];
             break;
             
         default:
@@ -335,7 +309,7 @@ didFailToReceiveAdWithError:(GADRequestError *)error {
 int counter = 0;
 
 -(void) resetBox {
-    r = CGRectMake(0, 70, 10, 15);
+    r = CGRectMake(0, 70, 3, 15);
     box.frame = r;
     t = 0.0;
 }
@@ -410,17 +384,10 @@ int counter = 0;
 #pragma mark Highlighting first run
 -(void) setOptionButtonImages {
     
-    [option_one setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateHighlighted];
-    [option_one setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateSelected];
-    
-    [option_two setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-    [option_two setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
-    
-    [option_three setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-    [option_three setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
-    
-    [option_four setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
-    [option_four setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateSelected];
+    [option_one   setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"]   forState:UIControlStateHighlighted | UIControlStateSelected ];
+    [option_two   setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted | UIControlStateSelected ];
+    [option_three setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted | UIControlStateSelected ];
+    [option_four  setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted | UIControlStateSelected ];
 }
 #pragma mark Buttons
 
@@ -448,21 +415,20 @@ int counter = 0;
             level++;
         }
         
-        [button setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateHighlighted];
-        [button setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateSelected];
-        //        NSString* myNewString = [NSString stringWithFormat:@"%i", counter];
+        [button setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateHighlighted ];
+        
         [currentScore setText:[NSString stringWithFormat:@"%i", counter + 1]];
-        //        scoreLabel.hidden = YES;
+        
+        
         score++;
         if (score == 15) {
             level = 0;
             counter = 0;
-            NSLog(@"%i counter", counter);
-            NSLog(@"%i score", score);
             [self resetBox];
             [self updateLevelText_start];
             [self showWinningView];
             [self setTextForQuestion:counter];
+            
             [self resetBox];
             pause_ = NO;
             return;
@@ -485,24 +451,27 @@ int counter = 0;
         [self resetBox];
         [self updateLevelText];
         
+        [button setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted ];
+        [button setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateNormal ];
+        
         switch (q.correct) {
-            case 1:
+            case 0:
                 [option_one setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateNormal];
                 break;
-            case 2:
+            case 1:
                 [option_two setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateNormal];
                 break;
-            case 3:
+            case 2:
                 [option_three setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateNormal];
                 break;
-            case 4:
+            case 3:
                 [option_four setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateNormal];
                 break;
                 
             default:
                 break;
         }
-        
+//        sleep(3);
         [self showRestartCounterView];
         score = 0;
     }
@@ -650,10 +619,16 @@ int counter = 0;
     [joker_stop setUserInteractionEnabled:YES];
     [joker_skip setUserInteractionEnabled:YES];
     
-    [option_one setBackgroundImage:nil forState:UIControlStateNormal];
-    [option_two setBackgroundImage:nil forState:UIControlStateNormal];
-    [option_three setBackgroundImage:nil forState:UIControlStateNormal];
-    [option_four setBackgroundImage:nil forState:UIControlStateNormal];
+    [option_one setBackgroundImage:[UIImage imageNamed:@"button-solid-bordered.png"] forState:UIControlStateNormal];
+    [option_two setBackgroundImage:[UIImage imageNamed:@"button-solid-bordered.png"] forState:UIControlStateNormal];
+    [option_three setBackgroundImage:[UIImage imageNamed:@"button-solid-bordered.png"] forState:UIControlStateNormal];
+    [option_four setBackgroundImage:[UIImage imageNamed:@"button-solid-bordered.png"] forState:UIControlStateNormal];
+    
+    [option_one   setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
+    [option_two   setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
+    [option_three setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
+    [option_four  setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted];
+    
     [joker_stop setBackgroundImage:nil forState:UIControlStateNormal];
     [joker_skip setBackgroundImage:nil forState:UIControlStateNormal];
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -682,22 +657,12 @@ int counter = 0;
     
     // skip
     if (button.tag == 6) {
-        
-        //        [button setAdjustsImageWhenDisabled:NO];
-        //        [button setAlpha:1.0];
         [button setUserInteractionEnabled:NO];
         
         [self resetBox];
         t = 0.0;
-        //        if (score < 16) {
         counter++;
         [self setTextForQuestion:counter];
-        //        }
-        //        else if (score == 16) {
-        //            NSLog(@"reached after check");
-        //        }
-        
-        
     }
     
     // fold
@@ -706,14 +671,11 @@ int counter = 0;
         level = 0;
         [currentScore setText:@"0"];
         
-        
         joker_skip.hidden = NO;
         joker_stop.hidden = NO;
         [self updateLevelText_start];
         [self setTextForQuestion:0];
-        
         [self showRestartCounterView];
-        
     }
 }
 

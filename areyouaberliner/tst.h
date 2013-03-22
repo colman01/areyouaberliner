@@ -23,4 +23,11 @@
 
 
 -(void) create;
+
+-(void) shuffle;
+
+-(void) shuffleQuestions;
+
 @end
+
+

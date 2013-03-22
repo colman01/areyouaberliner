@@ -157,7 +157,7 @@
 							<object class="IBUILabel" id="433475917">
 								<reference key="NSNextResponder" ref="404487874"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{8, 80}, {308, 82}}</string>
+								<string key="NSFrame">{{17, 80}, {282, 82}}</string>
 								<reference key="NSSuperview" ref="404487874"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="508762979"/>
@@ -188,7 +188,7 @@
 									<int key="NSfFlags">16</int>
 								</object>
 								<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
-								<double key="preferredMaxLayoutWidth">308</double>
+								<double key="preferredMaxLayoutWidth">282</double>
 							</object>
 							<object class="IBUILabel" id="508762979">
 								<reference key="NSNextResponder" ref="404487874"/>
@@ -807,7 +807,7 @@
 				<string key="145.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="28.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="33.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<real value="3" key="33.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
+				<real value="2" key="33.IBUIButtonInspectorSelectedStateConfigurationMetadataKey"/>
 				<string key="34.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="35.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="36.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -839,9 +839,7 @@
 						<string key="jokerWasPressed:">id</string>
 						<string key="restartQuiz:">id</string>
 						<string key="showCurl:">id</string>
-						<string key="showDefault:">id</string>
 						<string key="showDissolve:">id</string>
-						<string key="showFlip:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
 						<object class="IBActionInfo" key="buttonWasPressed:">
@@ -864,16 +862,8 @@
 							<string key="name">showCurl:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-						<object class="IBActionInfo" key="showDefault:">
-							<string key="name">showDefault:</string>
-							<string key="candidateClassName">id</string>
-						</object>
 						<object class="IBActionInfo" key="showDissolve:">
 							<string key="name">showDissolve:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="showFlip:">
-							<string key="name">showFlip:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 					</dictionary>
