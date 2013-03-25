@@ -33,7 +33,7 @@
     
     IBOutlet UILabel * timerLabel;
     
-    IBOutlet UILabel * scoreLabel;
+//    IBOutlet UILabel * scoreLabel;
     
     IBOutlet UILabel * levelBar;
     IBOutlet UILabel * currentScore;
@@ -41,7 +41,7 @@
     ProgressAnimation * box;
     TextFieldData * tfd;
     Question * question_;
-    CreateQuestions  * createQuestions;
+//    CreateQuestions  * createQuestions;
     
     NSArray *one;
     NSArray *two;
@@ -78,7 +78,7 @@
 
 @property (nonatomic, retain) ProgressAnimation *box;
 
-@property (nonatomic, retain) CreateQuestions *createQuestions;
+//@property (nonatomic, retain) CreateQuestions *createQuestions;
 
 @property (nonatomic, retain) IBOutlet UIViewController *welcomeVC;
 @property (nonatomic, retain) IBOutlet UIViewController *restartVC;
@@ -88,7 +88,7 @@
 
 - (GADRequest *)createRequest;
 
--(void)askQuestion;
+//-(void)askQuestion;
 -(void) updateLevelText;
 -(IBAction)restartQuiz :(id)sender;
 -(IBAction)hideWelcome :(id)sender;
@@ -96,3 +96,84 @@
 
 
 @end
+
+
+
+
+//switch (currentQuestion.correct) {
+//
+//        [option_one   setBackgroundImage:[UIImage imageNamed:nil] forState:UIControlStateNormal ];
+//        [option_two   setBackgroundImage:[UIImage imageNamed:nil] forState:UIControlStateNormal ];
+//        [option_three setBackgroundImage:[UIImage imageNamed:nil] forState:UIControlStateNormal ];
+//        [option_four  setBackgroundImage:[UIImage imageNamed:nil] forState:UIControlStateNormal ];
+//
+//    case 0:
+//        [option_one   setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"]   forState:UIControlStateSelected | UIControlStateHighlighted  ];
+//        [option_two   setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState: UIControlStateHighlighted| UIControlStateSelected ];
+//        [option_three setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted | UIControlStateSelected ];
+//        [option_four  setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted | UIControlStateSelected ];
+//        break;
+//
+//    case 1:
+//        [option_one    setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted | UIControlStateSelected ];
+//        [option_two    setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"]   forState:UIControlStateHighlighted | UIControlStateSelected ];
+//        [option_three  setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted | UIControlStateSelected ];
+//        [option_four   setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted | UIControlStateSelected ];
+//        break;
+//
+//    case 2:
+//        [option_one   setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"]  forState:UIControlStateHighlighted | UIControlStateSelected ];
+//        [option_two   setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"]  forState:UIControlStateHighlighted | UIControlStateSelected ];
+//        [option_three setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"]    forState:UIControlStateHighlighted | UIControlStateSelected ];
+//        [option_four  setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"]  forState:UIControlStateHighlighted | UIControlStateSelected ];
+//        break;
+//
+//    case 4:
+//        [option_one   setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"]   forState:UIControlStateHighlighted | UIControlStateSelected ];
+//        [option_two   setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"]   forState:UIControlStateHighlighted | UIControlStateSelected ];
+//        [option_three setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"]   forState:UIControlStateHighlighted | UIControlStateSelected ];
+//        [option_four  setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"]     forState:UIControlStateHighlighted | UIControlStateSelected ];
+//        break;
+//
+//    default:
+//        break;
+//}
+
+
+//        [button setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateHighlighted ];
+//        [button setBackgroundImage:[UIImage imageNamed:@"answer-incorrect.png"] forState:UIControlStateNormal ];
+
+//        switch (q.correct) {
+//            case 0:
+//                [option_one setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateNormal];
+//                break;
+//            case 1:
+//                [option_two setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateNormal];
+//                break;
+//            case 2:
+//                [option_three setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateNormal];
+//                break;
+//            case 3:
+//                [option_four setBackgroundImage:[UIImage imageNamed:@"answer-correct.png"] forState:UIControlStateNormal];
+//                break;
+//
+//            default:
+//                break;
+//        }
+
+
+// Here we're creating a simple GADRequest and whitelisting the application
+// for test ads. You should request test ads during development to avoid
+// generating invalid impressions and clicks.
+//- (GADRequest *)createRequest {
+//    GADRequest *request = [GADRequest request];
+//
+//    // Make the request for a test ad. Put in an identifier for the simulator as
+//    // well as any devices you want to receive test ads.
+//    request.testDevices =
+//    [NSArray arrayWithObjects:
+//     // TODO: Add your device/simulator test identifiers here. They are
+//     // printed to the console when the app is launched.
+//     nil];
+//    return request;
+//}
