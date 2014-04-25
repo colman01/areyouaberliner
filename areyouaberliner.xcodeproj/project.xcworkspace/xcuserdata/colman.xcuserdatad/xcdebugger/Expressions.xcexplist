@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[FBShare init]:FBShare.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "FBSession.activeSession">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__31-[ViewController publishStory:]_block_invoke:ViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "activeSession">
+            </PersistentString>
+            <PersistentString
+               value = "FBSession">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[GameView viewDidLoad]:GameView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "isGameCenterAvailable">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Question shuffleThisQuestion]:Question.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "correct">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
